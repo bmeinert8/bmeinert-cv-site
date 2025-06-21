@@ -113,5 +113,89 @@ body {
   background-color: var(--Primary-Color);
   display: flex;
   justify-content: center;
+}
+
+/*************************************/
+/*            Typography             */
+/*************************************/
+
+.text-preset-1 {
+  font-family: var(--Font-Header);
+  font-size: 28px; /* 32px */
+  color: var(--Header-Color);
+  font-weight: 500;
+}
+
+.text-preset-2 {
+  font-family: var(--Font-Text);
+  font-size: 16px;
+  color: var(--Text-Color);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*************************************/
+/*          General Styling          */
+/*************************************/
+
+.main-container {
+  padding: var(--Spacing-24px) var(--Spacing-16px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Profile Card */
+.profile-info-section {
+  background-color: var(--Secondary-Color);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-8px);
+}
+
+.contact-btn {
+  padding: var(--Spacing-8px);
+  align-self: flex-end;
+  background-color: var(--Accent-Color);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--Text-Color);
+  font-family: var(--Font-Text);
+  font-size: 12px;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+.profile-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: var(--Spacing-16px);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--Accent-Color);
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   align-items: center;
+}
+
+.decoration-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Accent-Color);
+  border-radius: 8px;
+  padding: var(--Spacing-8px);
 }
