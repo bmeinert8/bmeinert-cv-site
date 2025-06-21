@@ -1,11 +1,11 @@
 {
   "routes": [
     {
-      "route": "/{*path}",
-      "serve": "/{*path}",
+      "route": "/{*.path}",
+      "serve": "/{*.path}",
       "statusCode": 301,
       "headers": {
-        "Location": "https://www.bmeinert.com/{*path}"
+        "Location": "https://www.bmeinert.com/{*.path}"
       }
     }
   ]
