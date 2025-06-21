@@ -1,0 +1,117 @@
+/**********************************/
+/*          CSS Variables         */
+/**********************************/
+
+:root {
+  /* Colors */
+
+  --Primary-Color: #2c3639;
+  --Secondary-Color: #3f4e4f;
+  --Accent-Color: #a27b5c;
+  --Header-Color: #dcd7c9;
+  --Text-Color: #f5ecd5;
+
+  /* Fonts */
+
+  --Font-Header: 'Rubik', sans-serif;
+  --Font-Text: 'Poppins', sans-serif;
+
+  /*Font Sizing*/
+
+  /* Spacing */
+
+  --Spacing-0px: 0rem;
+  --Spacing-8px: 0.5rem;
+  --Spacing-16px: 1rem;
+  --Spacing-24px: 1.5rem;
+  --Spacing-32px: 2rem;
+}
+
+/*************************************/
+/*             CSS Reset             */
+/*************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Ensure images are responsive and don't exceed their container */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset buttons to avoid inconsistent styling */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  appearance: none;
+}
+
+/* Ensure form elements don't overflow */
+input,
+textarea {
+  width: 100%;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Set base font and line height */
+html {
+  font-size: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; /* Prevent iOS font scaling */
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outlines for better accessibility control */
+:focus {
+  outline: none;
+}
+
+/* Ensure body takes up at least full viewport height */
+body {
+  min-height: 100vh;
+  background-color: var(--Primary-Color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
