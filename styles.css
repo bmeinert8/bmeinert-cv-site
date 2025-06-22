@@ -264,4 +264,6 @@ body {
   gap: var(--Spacing-8px);
 }
 
-
+.visually-hidden {
+  display: none;
+}
