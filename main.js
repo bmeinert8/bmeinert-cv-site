@@ -4,7 +4,9 @@ contactButton.addEventListener('click', () => {
   const contactDisplay = document.querySelector('.js-contact-info');
   contactDisplay.classList.toggle('contact-info-active');
   contactButton.innerText = `Hide Contact`;
-  if (!contactDisplay.classList.contains('contact-info-active')) {
-    contactButton.innerText = `Show Contact`;
-  }
+  setTimeout(() => {
+    if (!contactDisplay.classList.contains('contact-info-active')) {
+      contactButton.innerText = `Show Contact`;
+    }
+  }, 275);
 });
