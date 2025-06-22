@@ -134,6 +134,20 @@ body {
   line-height: 1.5;
 }
 
+.text-preset-3 {
+  font-family: var(--Font-Header);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Header-Color);
+}
+
+.text-preset-4 {
+  font-family: var(--Font-Text);
+  font-size: 14px;
+  color: var(--Text-Color);
+  font-weight: 400;
+}
+
 /*************************************/
 /*          General Styling          */
 /*************************************/
@@ -199,3 +213,55 @@ body {
   border-radius: 8px;
   padding: var(--Spacing-8px);
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-divider {
+  width: 90%;
+  height: 3px;
+  background-color: var(--Primary-Color);
+  border: none;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--Spacing-16px) var(--Spacing-32px);
+  gap: var(--Spacing-24px);
+}
+
+.contact-type-container {
+  display: flex;
+  gap: var(--Spacing-16px);
+  align-items: center;
+}
+
+.contact-info-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Spacing-8px);
+}
+
+.email-icon {
+  height: 24px;
+  width: 28px;
+}
+
+.location-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.socials-container {
+  display: flex;
+  padding: var(--Spacing-16px) var(--Spacing-32px);
+  gap: var(--Spacing-8px);
+}
+
+
