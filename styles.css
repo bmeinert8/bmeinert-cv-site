@@ -296,7 +296,7 @@ body {
 
 /* About Me Section */
 .about-me-section {
-  padding: var(--Spacing-24px);
+  padding: var(--Spacing-32px) var(--Spacing-24px);
   display: flex;
   flex-direction: column;
   align-items: center;
