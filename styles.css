@@ -22,6 +22,7 @@
 
   --Spacing-0px: 0rem;
   --Spacing-8px: 0.5rem;
+  --Spacing-12px: 12px;
   --Spacing-16px: 1rem;
   --Spacing-24px: 1.5rem;
   --Spacing-32px: 2rem;
@@ -112,6 +113,7 @@ body {
   min-height: 100vh;
   background-color: var(--Primary-Color);
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -178,7 +180,7 @@ body {
 
 /* Profile Card */
 .profile-info-section,
-.about-me-section {
+.about-me-section, .projects-section, .blog-section {
   background-color: var(--Secondary-Color);
   border-radius: 10px;
   width: 100%;
@@ -294,8 +296,31 @@ body {
   display: none;
 }
 
+
+/* navigation */
+.navigation {
+  background-color: var(--Secondary-Color);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: var(--Spacing-8px);
+  gap: var(--Spacing-8px);
+}
+
+.nav-button {
+  padding: var(--Spacing-12px) var(--Spacing-24px);
+  background-color: var(--Primary-Color);
+  border-radius: 10px;
+}
+
+.active {
+  background-color: var(--Accent-Color);
+}
+
+
 /* About Me Section */
-.about-me-section {
+.about-me-section, .projects-section, .blog-section {
   padding: var(--Spacing-32px) var(--Spacing-24px);
   display: flex;
   flex-direction: column;
@@ -314,4 +339,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--Spacing-16px);
+}
+
+
+/*  Footer */
+
+.footer-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Accent-Color);
+  padding: var(--Spacing-24px);
 }
