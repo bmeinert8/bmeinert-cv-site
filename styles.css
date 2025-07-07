@@ -341,6 +341,37 @@ body {
   gap: var(--Spacing-16px);
 }
 
+/* Projects Section */
+
+.project-image{
+  border-radius: 20px;
+}
+
+.project-title {
+  justify-self: center;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Spacing-16px);
+  justify-content: center;
+  align-items: center;
+  margin: var(--Spacing-32px) 0;
+}
+
+.project-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.stack-icon {
+  height: 25px;
+  width: 25px;
+}
+
 
 /*  Footer */
 
