@@ -71,13 +71,13 @@
       
       <!-- Page navigation -->
       <nav class="navigation">
-          <button class="nav-button active text-preset-6">About</button>
-          <button class="nav-button text-preset-6">Projects</button>
-          <button class="nav-button text-preset-6">Blog</button>
+          <button class="nav-button active text-preset-6 js-nav-button" data-section="about">About</button>
+          <button class="nav-button text-preset-6 js-nav-button" data-section="projects">Projects</button>
+          <button class="nav-button text-preset-6 js-nav-button" data-section="blog">Blog</button>
         </nav>
 
       <!-- About me section-->
-      <section class="about-me-section" id="about">
+      <section class="about-me-section js-about" id="about">
         <h2 class="text-preset-5">About Me</h2>
         <hr class="divider" />
         <article class="about-text-container">
@@ -116,7 +116,7 @@
       </section>
 
       <!-- Projects section-->
-      <section class="projects-section" id="projects">
+      <section class="projects-section hidden js-projects" id="projects">
         <h2 class="text-preset-5">Projects</h2>
         <hr class="divider" />
 
@@ -156,7 +156,7 @@
       </section>
 
       <!-- Blog Section -->
-      <section class="blog-section" id="blog"><h2 class="text-preset-5">Blog</h2>
+      <section class="blog-section hidden js-blog" id="blog"><h2 class="text-preset-5">Blog</h2>
         <hr class="divider" />
       </section>
     </main>

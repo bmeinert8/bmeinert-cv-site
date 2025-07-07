@@ -314,6 +314,10 @@ body {
   border-radius: 10px;
 }
 
+.nav-button:hover {
+  cursor: pointer;
+}
+
 .active {
   background-color: var(--Accent-Color);
 }
@@ -372,6 +376,10 @@ body {
   width: 25px;
 }
 
+.hidden {
+  display: none;
+}
+
 
 /*  Footer */
 
@@ -383,3 +391,5 @@ body {
   color: var(--Accent-Color);
   padding: var(--Spacing-24px);
 }
+
+/
