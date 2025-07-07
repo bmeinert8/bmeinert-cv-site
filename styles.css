@@ -58,7 +58,6 @@ svg {
 
 /* Remove default anchor styles */
 a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -380,6 +379,17 @@ body {
   display: none;
 }
 
+/* Blog Section */
+
+.building {
+  display: flex;
+  align-items: center;
+  margin-top: var(--Spacing-32px);
+  font-family: var(--Font-Header);
+  font-size: 28px;
+  color: var(--Header-Color);
+}
+
 
 /*  Footer */
 
@@ -391,5 +401,3 @@ body {
   color: var(--Accent-Color);
   padding: var(--Spacing-24px);
 }
-
-/
