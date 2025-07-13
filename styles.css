@@ -169,7 +169,9 @@ body {
 /*          General Styling          */
 /*************************************/
 
-.main-container {
+.main-container,
+.sections-container,
+.desktop-container {
   padding: var(--Spacing-24px) var(--Spacing-16px);
   display: flex;
   flex-direction: column;
@@ -179,7 +181,9 @@ body {
 
 /* Profile Card */
 .profile-info-section,
-.about-me-section, .projects-section, .blog-section {
+.about-me-section,
+.projects-section,
+.blog-section {
   background-color: var(--Secondary-Color);
   border-radius: 10px;
   width: 100%;
@@ -295,7 +299,6 @@ body {
   display: none;
 }
 
-
 /* navigation */
 .navigation {
   background-color: var(--Secondary-Color);
@@ -321,9 +324,10 @@ body {
   background-color: var(--Accent-Color);
 }
 
-
 /* About Me Section */
-.about-me-section, .projects-section, .blog-section {
+.about-me-section,
+.projects-section,
+.blog-section {
   padding: var(--Spacing-32px) var(--Spacing-24px);
   display: flex;
   flex-direction: column;
@@ -346,7 +350,7 @@ body {
 
 /* Projects Section */
 
-.project-image{
+.project-image {
   border-radius: 20px;
 }
 
@@ -390,14 +394,82 @@ body {
   color: var(--Header-Color);
 }
 
-
 /*  Footer */
 
-.footer-section{
+.footer-section {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--Accent-Color);
   padding: var(--Spacing-24px);
+}
+
+/*************************************/
+/*           Media Queries           */
+/*************************************/
+
+@media (min-width: 768px) {
+  .profile-info-section {
+    padding-top: var(--Spacing-32px);
+    justify-content: center;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .header-info {
+    margin-top: var(--Spacing-24px);
+    gap: var(--Spacing-16px);
+  }
+
+  .contact-info {
+    max-height: 500px; /* Adjust based on content */
+  }
+}
+
+@media (min-width: 1024px) {
+  .sections-container {
+    flex-direction: row;
+    justify-content: space-between; /* Space out sections */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure container takes full viewport height */
+  }
+
+  .profile-info-section {
+    position: sticky; /* Make the profile section stick */
+    top: var(--Spacing-24px); /* Stick to the top with some spacing */
+    min-width: 30%; /* Set a fixed width for the profile section */
+    max-width: 350px; /* Optional: cap the maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    flex-shrink: 0; /* Prevent the profile section from shrinking */
+  }
+
+  .desktop-container {
+    flex-grow: 1; /* Allow the right side to take remaining space */
+    width: 65%; /* Adjust width to fit beside profile section */
+
+    padding-top: 0;
+  }
+
+  /* Ensure the body allows scrolling */
+  body {
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  .profile-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
 }
