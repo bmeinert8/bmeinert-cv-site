@@ -472,4 +472,43 @@ body {
     width: 200px;
     height: 200px;
   }
+
+  .about-me-section,
+  .projects-section,
+  .blog-section {
+    padding: 48px 64px;
+    gap: var(--Spacing-32px);
+  }
+
+  .project-image {
+    max-width: 800px;
+  }
+
+  .project-title {
+    margin-top: var(--Spacing-24px);
+  }
+
+  .project-stack {
+    margin: var(--Spacing-12px) 0;
+  }
+
+  .text-preset-1 {
+    font-size: 36px;
+  }
+
+  .text-preset-2 {
+    font-size: 20px;
+  }
+
+  .text-preset-5 {
+    font-size: 32px;
+  }
+
+  .text-preset-3 {
+    font-size: 24px;
+  }
+
+  .text-preset-6 {
+    font-size: 17px;
+  }
 }
