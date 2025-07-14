@@ -417,10 +417,6 @@ body {
   .sections-container {
     padding: 0 !important;
   }
-
-  .desktop-container {
-    padding: 0 !important;
-  }
 }
 
 @media (max-width: 376px) {
@@ -431,7 +427,7 @@ body {
 
 @media (max-width: 500px) {
   .desktop-container {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
@@ -442,7 +438,7 @@ body {
   }
 
   .desktop-container {
-    padding: var(--Spacing-24px) var(--Spacing-16px);
+    padding: 0;
   }
 
   .contact-btn {
